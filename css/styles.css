@@ -164,13 +164,16 @@ li {
     }
 }
 /* Projects */
+.projects {
+    width: 70%;
+}
 .row {
     gap: 25px;
     margin-top: 30px;
 }
 .card {
     background-color: transparent !important;
-    border: 1px solid #fff !important;
+    border: 1px solid rgba(138, 138, 138, 0.559) !important;
 }
 .card img {
     padding: 20px 10px 0px 10px;
