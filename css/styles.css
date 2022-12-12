@@ -14,10 +14,10 @@ body {
     background-color: rgba(34, 34, 34, 0.967) !important;
     color: #fff !important;
 }
-h1, h2 {
+h1 {
     font-family: var(--font-roboto) !important;
 }
-h3,h4,h5,a {
+h2, h3 ,h4 ,h5 , a {
     font-family: var(--font-code) !important;
 }
 p, li {
@@ -51,7 +51,6 @@ li {
     color: var(--color-alternative);
     font-size: 130%;
 }
-
 @keyframes flicker {
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
       box-shadow:
@@ -68,6 +67,11 @@ li {
       box-shadow: none;
     }
   }
+/* Sections common */
+.projects, .about, .contact {
+    width: 70%;
+    margin: 0 auto;
+}
 .section-title {
     text-align: center;
     text-transform: uppercase;
@@ -114,8 +118,7 @@ li {
 .hero video {
     position: absolute;
     opacity: 40%;
-    left: auto;
-    height: 90%;
+    height: 95%;
     width: 100%;
     top: 0;
     z-index: -1;
@@ -127,13 +130,11 @@ li {
     position: relative;
     background-color: rgba(34, 34, 34, 0.742) !important;
     display: flex;
-    gap: 20px;
 }
 .showcase {
-    display: flex;
-    flex-direction: column;
+    padding: 3px;
     gap: 20px;
-    width: 90%;
+    width: 100%;
     text-align: center;
 }
 .showcase h1 {
@@ -144,36 +145,15 @@ li {
     height: 78%;
     border-radius: 50%;
 }
-@media (max-width: 768px) {
-    .hero {
-        height: 110vh;
-    }
-    .jumbotron img {
-        border-radius: 10px;
-        width: 45%;
-        height: 30%;
-        margin-bottom: 10px;
-    }
-    .jumbotron {
-        flex-direction: column-reverse;
-        gap: 15px;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        padding: 30px 10px 10px 10px !important;
-    }
-}
+
 /* Projects */
-.projects {
-    width: 70%;
-}
 .row {
     gap: 25px;
     margin-top: 30px;
 }
 .card {
-    background-color: transparent !important;
-    border: 1px solid rgba(138, 138, 138, 0.559) !important;
+    background-color: rgba(28, 26, 25, 0.702) !important;
+    box-shadow: 7px 6px 4px rgb(25, 24, 24);
 }
 .card img {
     padding: 20px 10px 0px 10px;
@@ -212,7 +192,7 @@ div .icon {
 .about-ct {
     border: none !important;
     margin-top: 50px;
-    background-color: rgb(56, 56, 56) !important;
+    background-color:  rgba(28, 26, 25, 0.702) !important;
     padding: 20px;
 }
 .skills {
@@ -240,7 +220,7 @@ div .icon {
     text-transform: uppercase;
 }
 .modal-content {
-    background-color: rgb(18, 18, 18) !important;
+    background-color:  rgba(28, 26, 25, 0.996) !important;
     text-align: center;
 }
 .modal-content h5 {
@@ -253,6 +233,54 @@ div .icon {
 .modal-footer {
     border: none !important;
 }
-
+.btn-styled {
+    background-color: var(--color-alternative);
+    color: rgba(28, 26, 25, 0.996);
+    font-weight: 700;
+}
+@media (max-width: 480px) {
+    .hero {
+        height: 140vh;
+    }
+    .hero video {
+        height: 100%;
+    }
+    .jumbotron {
+        margin: 15px 10px 10px 15px;
+    }
+    .projects {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .projects img {
+        height: 150px;
+        width: 250px;
+    }
+    .about {
+        width: 85%;
+    }
+    .icon {
+        font-size: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .hero {
+        height: 110vh;
+    }
+    .jumbotron img {
+        border-radius: 10px;
+        width: 45%;
+        height: 30%;
+        margin-bottom: 10px;
+    }
+    .jumbotron {
+        flex-direction: column-reverse;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        padding: 30px 10px 10px 10px !important;
+    }
+}
 
 

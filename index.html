@@ -33,6 +33,13 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <!-- Animated Css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -79,9 +86,10 @@
         autoplay=""
         muted=""
         loop=""
+        poster="./images/poster.png"
       ></video>
 
-      <div class="jumbotron">
+      <div class="jumbotron animate__animated animate__fadeIn">
         <div class="showcase">
           <h1 class="display-4">Ainhoa Prada</h1>
           <h3>Web Developer</h3>
@@ -97,7 +105,7 @@
     </section>
 
     <!-- Projects -->
-    <section class="prjects" id="projects">
+    <section class="projects animate__animated animate__slideInLeft" id="projects">
       <h2 class="section-title">Projects</h2>
       <!-- cards -->
 
@@ -189,7 +197,8 @@
     </section>
     <!-- About -->
 
-    <section class="about">
+    <section class="about animate__animated animate__slideInRight">
+      <h2 class="section-title">About</h2>
       <div class="about-cards">
         <div class="card container about-ct">
           <h3>Programming languages</h3>
@@ -244,19 +253,19 @@
             <ul>
               <div class="row">
                 <!-- I need to check the layout -->
-                <li class="col-5">Problem solving skills</li>
-                <li class="col-5">Critical thinking Skills</li>
-                <li class="col-5">Communication Skills</li>
-                <li class="col-5">Analytical thinking skills</li>
-                <li class="col-5">Responsability</li>
-                <li class="col-5">Microsoft office knowledge</li>
-                <li class="col-5">Working on goups</li>
-                <li class="col-5">Adaptability</li>
-                <li class="col-5">Leadership</li>
-                <li class="col-5">Good customer service</li>
-                <li class="col-5">Digital skills</li>
-                <li class="col-5">Programming languages</li>
-                <li class="col-5">Math and Statistics</li>
+                <li class="col-12 col-md-5">Problem solving skills</li>
+                <li class="col-12 col-md-5">Critical thinking Skills</li>
+                <li class="col-12 col-md-5">Communication Skills</li>
+                <li class="col-12 col-md-5">Analytical thinking skills</li>
+                <li class="col-12 col-md-5">Responsability</li>
+                <li class="col-12 col-md-5">Microsoft office knowledge</li>
+                <li class="col-12 col-md-5">Working on goups</li>
+                <li class="col-12 col-md-5">Adaptability</li>
+                <li class="col-12 col-md-5">Leadership</li>
+                <li class="col-12 col-md-5">Good customer service</li>
+                <li class="col-12 col-md-5">Digital skills</li>
+                <li class="col-12 col-md-5">Programming languages</li>
+                <li class="col-12 col-md-5">Math and Statistics</li>
               </div>
             </ul>
           </div>
@@ -292,7 +301,7 @@
         <p>Your message is important to me and I will do my best to respond as soon as possible. Thank you again.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-styled" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
