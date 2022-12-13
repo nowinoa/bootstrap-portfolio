@@ -9,6 +9,7 @@
                    0 0 12px rgb(167, 151, 132);
     --heliotrope: #ba7846;
     --color-alternative: rgb(190, 186, 186);
+    --box-shadow-neon: inset 0px 0px 8px rgb(167, 151, 132), 0 0 15px rgba(191, 128, 76, 0.878);
 }
 body {
     background-color: rgba(34, 34, 34, 0.967) !important;
@@ -67,6 +68,7 @@ li {
       box-shadow: none;
     }
   }
+
 /* Sections common */
 .row {
     gap: 25px;
@@ -154,13 +156,23 @@ li {
 
 .card {
     background-color: rgba(28, 26, 25, 0.702) !important;
-    box-shadow: 7px 6px 4px rgb(25, 24, 24);
+    box-shadow: 0px 15px 15px rgb(25, 24, 24);
     justify-content: center;
     align-items: center;
+    border: none !important;
+    cursor: pointer;
+}
+.card:hover {
+    box-shadow: var(--box-shadow-neon);
+}
+.card a {
+    padding: 20px 10px 0px 10px;
+    width: 100%;
+    height: 60%;
 }
 .card img {
-    padding: 20px 10px 0px 10px;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -214,6 +226,7 @@ div .icon {
 }
 .contact i:hover {
     transform: scale(1.5);
+    box-shadow: 4px 4px 5px rgba(36, 33, 33, 0.761);
 }
 
 .modal-title {
@@ -239,7 +252,15 @@ div .icon {
     color: rgba(28, 26, 25, 0.996);
     font-weight: 700;
 }
+
+
 @media (max-width: 480px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* Banner */
     .hero {
         height: 140vh;
     }
@@ -249,6 +270,7 @@ div .icon {
     .jumbotron {
         margin: 15px 10px 10px 15px;
     }
+    /* Projects */
     .projects {
         width: 80%;
         margin: 50px auto;
@@ -256,19 +278,20 @@ div .icon {
     .projects img {
         height: 150px;
     }
+    /* about */
     .about {
         width: 85%;
     }
+    /* contact */
     .icon {
         font-size: 10px;
     }
-    .navbar {
-        flex-direction: column;
-        justify-content: center;
-    }
+    
     
 }
+/* Tablet */
 @media (max-width: 768px) {
+    /* Banner */
     .hero {
         height: 110vh;
     }
@@ -286,6 +309,7 @@ div .icon {
         width: 80%;
         padding: 30px 10px 10px 10px !important;
     }
+    /* Projects */
     .skills ul {
         width: 100%;
         padding: 0px 0px 20px 0px;
