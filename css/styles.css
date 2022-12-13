@@ -68,6 +68,10 @@ li {
     }
   }
 /* Sections common */
+.row {
+    gap: 25px;
+    margin-top: 30px;
+}
 .projects, .about, .contact {
     width: 70%;
     margin: 0 auto;
@@ -147,13 +151,12 @@ li {
 }
 
 /* Projects */
-.row {
-    gap: 25px;
-    margin-top: 30px;
-}
+
 .card {
     background-color: rgba(28, 26, 25, 0.702) !important;
     box-shadow: 7px 6px 4px rgb(25, 24, 24);
+    justify-content: center;
+    align-items: center;
 }
 .card img {
     padding: 20px 10px 0px 10px;
@@ -162,10 +165,8 @@ li {
     border-radius: 5px;
 }
 div .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 15px 10px 10px 10px;
+    text-align: center;
 }
 .card-text {
     text-align: center;
@@ -250,11 +251,10 @@ div .icon {
     }
     .projects {
         width: 80%;
-        margin: 0 auto;
+        margin: 50px auto;
     }
     .projects img {
         height: 150px;
-        width: 250px;
     }
     .about {
         width: 85%;
@@ -262,6 +262,11 @@ div .icon {
     .icon {
         font-size: 10px;
     }
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
 }
 @media (max-width: 768px) {
     .hero {
@@ -280,6 +285,12 @@ div .icon {
         justify-content: center;
         width: 80%;
         padding: 30px 10px 10px 10px !important;
+    }
+    .skills ul {
+        width: 100%;
+        padding: 0px 0px 20px 0px;
+        justify-content: center;
+        align-items: center;
     }
 }
 
