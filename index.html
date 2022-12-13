@@ -35,15 +35,15 @@
     />
     <!-- Animated Css -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Responsive navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#">
+    <nav id="home" class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#home">
         <img
           src="https://nowinoa.github.io/challenge2/images/neon_logo.png"
           alt="logo"
@@ -64,13 +64,13 @@
       <div class="collapse navbar-collapse links" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -102,208 +102,256 @@
       </div>
     </section>
 
-    <!-- Projects -->
-    <section class="projects animate__animated animate__slideInLeft" id="projects">
-      <h2 class="section-title">Projects</h2>
-      <!-- cards -->
+    <main>
+      <!-- Projects -->
+      <section
+        class="projects animate__animated animate__slideInLeft"
+        id="projects"
+      >
+        <h2 class="section-title">Projects</h2>
+        <!-- cards -->
 
-      <div class="container">
-        <div class="row">
-          <div class="card col-12" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./images/cafe-blog.png"
-              alt="cafe blog"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Cafe Blog</h4>
-              <p class="card-text">Html and CSS based-web about a cofe blog</p>
+        <div class="container">
+          <div class="row">
+            <div class="card col-12" style="width: 18rem">
+              <a href="https://blogdecafepy3.netlify.app/" class="cardLink">
+                <img
+                  class="card-img-top"
+                  src="./images/cafe-blog.png"
+                  alt="cafe blog"
+                />
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">Cafe Blog</h4>
+                <p class="card-text">
+                  Html and CSS based-web about a cofe blog
+                </p>
+              </div>
+            </div>
+            <div class="card col-12 col-lg" style="width: 18rem">
+              <a href="https://pryctwb1.netlify.app/" class="cardLink">
+                <img
+                  class="card-img-top"
+                  src="./images/freelancer.png"
+                  alt="freelancer web"
+                />
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">Freelance web</h4>
+                <p class="card-text">
+                  Html and CSS based-web about freelancer webs service
+                </p>
+              </div>
+            </div>
+            <div class="card col-12 col-lg" style="width: 18rem">
+              <a href="https://github.com/nowinoa" class="cardLink">
+                <img
+                  class="card-img-top"
+                  src="./images/pipes-guide-angular.png"
+                  alt="pipes guide"
+                />
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">Pipes guides</h4>
+                <p class="card-text">
+                  Project made with Angular and PrimeNG about a guide of angular
+                  pipes.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="card col-12 col-lg" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./images/freelancer.png"
-              alt="freelancer web"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Freelance web</h4>
-              <p class="card-text">
-                Html and CSS based-web about freelancer webs service
-              </p>
-            </div>
-          </div>
-          <div class="card col-12 col-lg" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./images/pipes-guide-angular.png"
-              alt="pipes guide"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Pipes guides</h4>
-              <p class="card-text">
-                Project made with Angular and PrimeNG about a guide of angular
-                pipes.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- First row -->
+          <!-- First row -->
 
-        <div class="row">
-          <div class="card col-12" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./images/surface-repairs.png"
-              alt="surface repairs app"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Surface Repairs</h4>
-              <p class="card-text">
-                Project made with Angular and primeNG simulating a surface
-                repairs web.
-              </p>
-            </div>
-          </div>
-          <div class="card col-12 col-lg" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./images/t-shirt-store.png"
-              alt="t-shirt store"
-            />
-            <div class="card-body">
-              <h4 class="card-title">T-shirt store</h4>
-              <p class="card-text">Html and Css simulating a T-shirt store.</p>
-            </div>
-          </div>
-          <div class="card col-12 col-lg" style="width: 18rem">
-            <img
-              class="card-img-top"
-              src="./images/dictionary.png"
-              alt="dictionary"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Dictionary</h4>
-              <p class="card-text">
-                And also, I have a bunch of JavaScript components! Check my
-                GitHub profile.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About -->
-
-    <section class="about animate__animated animate__slideInRight">
-      <h2 class="section-title">About</h2>
-      <div class="about-cards">
-        <div class="container about-ct">
-          <h3>Programming languages</h3>
-          <div class="icons">
-            <div class="row">
-              <div class="icon col">
-                <i class="fa-brands fa-square-js fa-4x" alt="javascript"></i>
-                <p>JavaScript</p>
-              </div>
-              <div class="icon col">
-                <i class="fa-brands fa-html5 fa-4x" alt="html"></i>
-                <p>HTML</p>
-              </div>
-              <div class="icon col">
-                <i class="fa-brands fa-css3-alt fa-4x" alt="css"></i>
-                <p>CSS</p>
+          <div class="row">
+            <div class="card col-12" style="width: 18rem">
+              <a href="https://github.com/nowinoa" class="cardLink">
+                <img
+                  class="card-img-top"
+                  src="./images/surface-repairs.png"
+                  alt="surface repairs app"
+                />
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">Surface Repairs</h4>
+                <p class="card-text">
+                  Project made with Angular and primeNG simulating a surface
+                  repairs web.
+                </p>
               </div>
             </div>
-            <div class="row">
-              <div class="icon col">
-                <i class="fa-brands fa-angular fa-4x" alt="angular"></i>
-                <p>Angular</p>
-              </div>
-              <div class="icon col">
-                <i class="fa-brands fa-bootstrap fa-4x" alt="bootstrap"></i>
-                <p>Bootstrap</p>
-              </div>
-              <div class="icon col">
-                <i class="fa-brands fa-git fa-4x" alt="git"></i>
-                <p>Git</p>
+            <div class="card col-12 col-lg" style="width: 18rem">
+              <a href="https://frontendpy2.netlify.app/" class="cardLink">
+                <img
+                  class="card-img-top"
+                  src="./images/t-shirt-store.png"
+                  alt="t-shirt store"
+                />
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">T-shirt store</h4>
+                <p class="card-text">
+                  Html and Css simulating a T-shirt store.
+                </p>
               </div>
             </div>
-            <div class="row">
-              <div class="icon col">
-                <i class="fa-brands fa-github fa-4x" alt="github"></i>
-                <p>GitHub</p>
-              </div>
-              <div class="icon col">
-                <i class="fa-solid fa-pencil fa-4x" alt="postman"></i>
-                <p>Postman</p>
-              </div>
-              <div class="icon col">
-                <i class="fa-brands fa-react fa-4x" alt="react"></i>
-                <p>React</p>
+            <div class="card col-12 col-lg" style="width: 18rem">
+              <a href="https://github.com/nowinoa" class="cardLink">
+                <img
+                  class="card-img-top"
+                  src="./images/dictionary.png"
+                  alt="dictionary"
+                />
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">Dictionary</h4>
+                <p class="card-text">
+                  And also, I have a bunch of JavaScript components! Check my
+                  GitHub profile.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class=" skills container about-ct">
-          <h3>Skills</h3>
-          <div>
-            <ul>
+      </section>
+      <!-- About -->
+
+      <section id="about" class="about animate__animated animate__slideInRight container">
+        <h2 class="section-title">About</h2>
+        <div class="about-cards row">
+          <div class="container about-ct col-12">
+            <h3>Programming languages</h3>
+            <div class="icons">
               <div class="row">
-                <!-- I need to check the layout -->
-                <li class="col-12 col-md-5">Problem solving skills</li>
-                <li class="col-12 col-md-5">Critical thinking Skills</li>
-                <li class="col-12 col-md-5">Communication Skills</li>
-                <li class="col-12 col-md-5">Analytical thinking skills</li>
-                <li class="col-12 col-md-5">Responsability</li>
-                <li class="col-12 col-md-5">Microsoft office knowledge</li>
-                <li class="col-12 col-md-5">Working on goups</li>
-                <li class="col-12 col-md-5">Adaptability</li>
-                <li class="col-12 col-md-5">Leadership</li>
-                <li class="col-12 col-md-5">Good customer service</li>
-                <li class="col-12 col-md-5">Digital skills</li>
-                <li class="col-12 col-md-5">Programming languages</li>
-                <li class="col-12 col-md-5">Math and Statistics</li>
+                <div class="icon col">
+                  <i class="fa-brands fa-square-js fa-4x" alt="javascript"></i>
+                  <p>JavaScript</p>
+                </div>
+                <div class="icon col">
+                  <i class="fa-brands fa-html5 fa-4x" alt="html"></i>
+                  <p>HTML</p>
+                </div>
+                <div class="icon col">
+                  <i class="fa-brands fa-css3-alt fa-4x" alt="css"></i>
+                  <p>CSS</p>
+                </div>
               </div>
-            </ul>
+              <div class="row">
+                <div class="icon col">
+                  <i class="fa-brands fa-angular fa-4x" alt="angular"></i>
+                  <p>Angular</p>
+                </div>
+                <div class="icon col">
+                  <i class="fa-brands fa-bootstrap fa-4x" alt="bootstrap"></i>
+                  <p>Bootstrap</p>
+                </div>
+                <div class="icon col">
+                  <i class="fa-brands fa-git fa-4x" alt="git"></i>
+                  <p>Git</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="icon col">
+                  <i class="fa-brands fa-github fa-4x" alt="github"></i>
+                  <p>GitHub</p>
+                </div>
+                <div class="icon col">
+                  <i class="fa-solid fa-pencil fa-4x" alt="postman"></i>
+                  <p>Postman</p>
+                </div>
+                <div class="icon col">
+                  <i class="fa-brands fa-react fa-4x" alt="react"></i>
+                  <p>React</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills container about-ct col-12">
+            <h3>Skills</h3>
+            <div>
+              <ul>
+                <div class="row">
+                  <!-- I need to check the layout -->
+                  <li class="col-12 col-md-5">Problem solving skills</li>
+                  <li class="col-12 col-md-5">Critical thinking Skills</li>
+                  <li class="col-12 col-md-5">Communication Skills</li>
+                  <li class="col-12 col-md-5">Analytical thinking skills</li>
+                  <li class="col-12 col-md-5">Responsability</li>
+                  <li class="col-12 col-md-5">Microsoft office knowledge</li>
+                  <li class="col-12 col-md-5">Working on goups</li>
+                  <li class="col-12 col-md-5">Adaptability</li>
+                  <li class="col-12 col-md-5">Leadership</li>
+                  <li class="col-12 col-md-5">Good customer service</li>
+                  <li class="col-12 col-md-5">Digital skills</li>
+                  <li class="col-12 col-md-5">Programming languages</li>
+                  <li class="col-12 col-md-5">Math and Statistics</li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact section -->
+      <section id="contact" class="contact container">
+        <p>
+          I hope you enjoyed looking through my work and learning more about me.
+          If you have any questions or comments, please don't hesitate to
+          contact me. Thank you for taking the time to check out my portfolio!
+        </p>
+        <div class="social_icons row">
+          <a
+            class="col"
+            href="https://www.linkedin.com/in/ainhoa-prada-498913259/"
+            ><i class="fa-2x fa-brands fa-linkedin" alt="linkedin"></i
+          ></a>
+          <a class="col gmail" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa-solid fa-envelope fa-2x" alt="gmail"></i>
+          </a>
+
+          <a class="col" href="https://github.com/nowinoa"
+            ><i class="fa-brands fa-github fa-2x" alt="GitHub account"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">Email me!</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h5>apt.code14@gmail.com</h5>
+              <p>
+                Your message is important to me and I will do my best to respond
+                as soon as possible. Thank you again.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-styled" data-dismiss="modal">
+                Close
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Contact section -->
-    <section id="contact" class="contact container">
-      <p>I hope you enjoyed looking through my work and learning more about me. If you have any questions or comments, please don't hesitate to contact me. Thank you for taking the time to check out my portfolio!</p>
-      <div class="social_icons row">
-        <a class="col" href="https://www.linkedin.com/in/ainhoa-prada-498913259/"><i class="fa-2x fa-brands fa-linkedin" alt="linkedin"></i></a>
-        <a class="col gmail" data-toggle="modal" data-target="#exampleModal">
-          <i class="fa-solid fa-envelope fa-2x" alt="gmail"></i>
-        </a>
-    
-        <a class="col" href="https://github.com/nowinoa"><i class="fa-brands fa-github fa-2x" alt="GitHub account"></i></a>
-      </div>
-    </section>
-
-<!-- Modal -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="exampleModalLabel">Email me!</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h5>apt.code14@gmail.com</h5>
-        <p>Your message is important to me and I will do my best to respond as soon as possible. Thank you again.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-styled" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+    </main>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
