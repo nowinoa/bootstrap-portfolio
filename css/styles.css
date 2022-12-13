@@ -199,6 +199,7 @@ li {
     border-radius: 5px;
 }
 div .card-body {
+    margin-top: 20px;
     padding: 15px 10px 10px 10px;
     text-align: center;
 }
@@ -275,7 +276,7 @@ div .icon {
     font-weight: 700;
 }
 
-
+/* Media query for responsive design */
 @media (max-width: 480px) {
     /* Navbar */
     .navbar {
