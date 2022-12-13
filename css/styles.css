@@ -230,6 +230,7 @@ div .icon {
     margin-top: 50px;
     background-color:  rgba(28, 26, 25, 0.702) !important;
     padding: 20px;
+    border-radius: 5px;
 }
 .skills {
     text-align: center;
