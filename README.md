@@ -5,6 +5,7 @@
 Welcome to my bootstrap portfolio! Here is a portfolio made with some bootstrap components such as a navigator menu, jumbotron, modal and grid system. 
 The content of this project is about myself where you can find some information about some projects I made in the past, my skills and which programming languages I use.
 This portfolio is made with the intention of promoting myself for future hires.
+
 https://nowinoa.github.io/bootstrap-portfolio/
 
 <img src="./images/apt-portfolio.png" alt="Alt text" title="APT portfolio">
