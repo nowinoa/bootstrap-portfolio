@@ -12,7 +12,7 @@ https://nowinoa.github.io/bootstrap-portfolio/
     
  
 
-## Table of Contents (Optional)
+## Table of Contents
 There are 4 sections on the website:
     -Home: information about me and navigation menu.
     -Projects: some projects I made in the past.
