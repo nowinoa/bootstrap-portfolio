@@ -7,9 +7,6 @@ The content of this project is about myself where you can find some information 
 This portfolio is made with the intention of promoting myself for future hires.
 
 https://nowinoa.github.io/bootstrap-portfolio/
-
-<img src="./images/apt-portfolio.png" alt="Alt text" title="APT portfolio">
-    
  
 
 ## Table of Contents
